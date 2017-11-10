@@ -1,0 +1,6 @@
+framework module Pods_TravisCIDemoiOS {
+  umbrella header "Pods-TravisCIDemoiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

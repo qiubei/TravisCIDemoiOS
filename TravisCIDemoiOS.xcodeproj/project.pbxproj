@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716F9E0919CD67630894C77B /* Pods_TravisCIDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D501AAF0A1BC0A94DD41907 /* Pods_TravisCIDemoiOS.framework */; };
 		B7CAEA8D1FB55B5B000D6DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAEA8C1FB55B5B000D6DFF /* AppDelegate.swift */; };
 		B7CAEA8F1FB55B5B000D6DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAEA8E1FB55B5B000D6DFF /* ViewController.swift */; };
 		B7CAEA921FB55B5B000D6DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CAEA901FB55B5B000D6DFF /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D501AAF0A1BC0A94DD41907 /* Pods_TravisCIDemoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIDemoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CAEA891FB55B5B000D6DFF /* TravisCIDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCIDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CAEA8C1FB55B5B000D6DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CAEA8E1FB55B5B000D6DFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		B7CAEA961FB55B5B000D6DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7CAEA991FB55B5B000D6DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7CAEA9B1FB55B5B000D6DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE670B3F9212EF6D62417149 /* Pods-TravisCIDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIDemoiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisCIDemoiOS/Pods-TravisCIDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6C35573DB5CA8216CB9FC2 /* Pods-TravisCIDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIDemoiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisCIDemoiOS/Pods-TravisCIDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716F9E0919CD67630894C77B /* Pods_TravisCIDemoiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C407BA72B2DCF8C00D13B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D501AAF0A1BC0A94DD41907 /* Pods_TravisCIDemoiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7CAEA801FB55B5B000D6DFF = {
 			isa = PBXGroup;
 			children = (
 				B7CAEA8B1FB55B5B000D6DFF /* TravisCIDemoiOS */,
 				B7CAEA8A1FB55B5B000D6DFF /* Products */,
+				CBDEBD6B97A4CB317D56B1D2 /* Pods */,
+				4C407BA72B2DCF8C00D13B4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = TravisCIDemoiOS;
 			sourceTree = "<group>";
 		};
+		CBDEBD6B97A4CB317D56B1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE670B3F9212EF6D62417149 /* Pods-TravisCIDemoiOS.debug.xcconfig */,
+				CE6C35573DB5CA8216CB9FC2 /* Pods-TravisCIDemoiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CAEA9E1FB55B5B000D6DFF /* Build configuration list for PBXNativeTarget "TravisCIDemoiOS" */;
 			buildPhases = (
+				14201375C733997464B3DE35 /* [CP] Check Pods Manifest.lock */,
 				B7CAEA851FB55B5B000D6DFF /* Sources */,
 				B7CAEA861FB55B5B000D6DFF /* Frameworks */,
 				B7CAEA871FB55B5B000D6DFF /* Resources */,
+				E56C05114E942B81A6001386 /* [CP] Embed Pods Frameworks */,
+				6FBDCC90F0A7252BE370A911 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14201375C733997464B3DE35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravisCIDemoiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FBDCC90F0A7252BE370A911 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisCIDemoiOS/Pods-TravisCIDemoiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56C05114E942B81A6001386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravisCIDemoiOS/Pods-TravisCIDemoiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisCIDemoiOS/Pods-TravisCIDemoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7CAEA851FB55B5B000D6DFF /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		B7CAEA9F1FB55B5B000D6DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE670B3F9212EF6D62417149 /* Pods-TravisCIDemoiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +373,7 @@
 		};
 		B7CAEAA01FB55B5B000D6DFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6C35573DB5CA8216CB9FC2 /* Pods-TravisCIDemoiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
